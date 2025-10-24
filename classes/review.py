@@ -1,5 +1,5 @@
-from user import User
-from house import Housing
+from .user import User
+from .house import Housing
 
 class InvalidRatingError(Exception):
     pass

@@ -1,0 +1,45 @@
+{
+    "users": [
+        {
+            "user_id": 1,
+            "name": "Иван 'Обновленный' Петров",
+            "contact_info": "ivan.new@example.com"
+        },
+        {
+            "user_id": 2,
+            "name": "Анна Смирнова",
+            "contact_info": "anna.s@example.com"
+        }
+    ],
+    "housings": [
+        {
+            "housing_id": 101,
+            "location": {
+                "city": "Москва",
+                "street": "Тверская",
+                "building_number": "10",
+                "postal_code": 125009
+            },
+            "price_per_night": 5500,
+            "description": "Уютная квартира в центре"
+        }
+    ],
+    "bookings": [
+        {
+            "booking_id": 1,
+            "user_id": 1,
+            "housing_id": 101,
+            "start_date": "2024-01-10",
+            "end_date": "2024-01-15"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": 1001,
+            "user_id": 1,
+            "housing_id": 101,
+            "rating": 5,
+            "comment": "Все было отлично!"
+        }
+    ]
+}
