@@ -26,3 +26,8 @@ class Booking:
         self.housing = housing
         self.start_date = start_date
         self.end_date = end_date
+
+    def __str__(self):
+        #Возвращаем информацию об обьекте
+        return (f"Бронирование (ID: {self.booking_id}) для пользователя '{self.user.name}' "
+                f"на жилье ID {self.housing.housing_id} с {self.start_date} по {self.end_date}")

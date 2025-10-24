@@ -27,3 +27,6 @@ class Review:
         self.rating = rating
         self.comment = comment
         
+    def __str__(self):
+        return (f"Отзыв #{self.review_id} от '{self.user.name}': "
+                f"Оценка {self.rating}/5. Комментарий: '{self.comment}'")
