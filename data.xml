@@ -2,8 +2,8 @@
 <data>
     <users>
         <user id="1">
-            <name>Иван 'Обновленный' Петров</name>
-            <contact_info>ivan.new@example.com</contact_info>
+            <name>Иван 'Измененный' Петров</name>
+            <contact_info>ivan.p@example.com</contact_info>
         </user>
         <user id="2">
             <name>Анна Смирнова</name>
@@ -11,25 +11,37 @@
         </user>
     </users>
     <housings>
-        <housing id="101" price="5500">
+        <housing id="101" price="5500.0">
             <location>
                 <city>Москва</city>
                 <street>Тверская</street>
                 <building_number>10</building_number>
                 <postal_code>125009</postal_code>
             </location>
-            <description>Уютная квартира в центре</description>
+            <description>Уютная квартира в центре Москвы</description>
+        </housing>
+        <housing id="202" price="4800.0">
+            <location>
+                <city>Санкт-Петербург</city>
+                <street>Невский проспект</street>
+                <building_number>25</building_number>
+            </location>
+            <description>Апартаменты с видом на Невский</description>
         </housing>
     </housings>
     <bookings>
-        <booking id="1" user_id="1" housing_id="101">
+        <booking id="501" user_id="1" housing_id="101">
             <start_date>2024-01-10</start_date>
             <end_date>2024-01-15</end_date>
+        </booking>
+        <booking id="502" user_id="2" housing_id="202">
+            <start_date>2024-02-20</start_date>
+            <end_date>2024-02-25</end_date>
         </booking>
     </bookings>
     <reviews>
         <review id="1001" user_id="1" housing_id="101" rating="5">
-            <comment>Все было отлично!</comment>
+            <comment>Отличное место! Все было на высшем уровне.</comment>
         </review>
     </reviews>
 </data>

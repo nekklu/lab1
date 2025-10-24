@@ -2,8 +2,8 @@
     "users": [
         {
             "user_id": 1,
-            "name": "Иван 'Обновленный' Петров",
-            "contact_info": "ivan.new@example.com"
+            "name": "Иван 'Измененный' Петров",
+            "contact_info": "ivan.p@example.com"
         },
         {
             "user_id": 2,
@@ -20,17 +20,35 @@
                 "building_number": "10",
                 "postal_code": 125009
             },
-            "price_per_night": 5500,
-            "description": "Уютная квартира в центре"
+            "price_per_night": 5500.0,
+            "description": "Уютная квартира в центре Москвы"
+        },
+        {
+            "housing_id": 202,
+            "location": {
+                "city": "Санкт-Петербург",
+                "street": "Невский проспект",
+                "building_number": "25",
+                "postal_code": null
+            },
+            "price_per_night": 4800.0,
+            "description": "Апартаменты с видом на Невский"
         }
     ],
     "bookings": [
         {
-            "booking_id": 1,
+            "booking_id": 501,
             "user_id": 1,
             "housing_id": 101,
             "start_date": "2024-01-10",
             "end_date": "2024-01-15"
+        },
+        {
+            "booking_id": 502,
+            "user_id": 2,
+            "housing_id": 202,
+            "start_date": "2024-02-20",
+            "end_date": "2024-02-25"
         }
     ],
     "reviews": [
@@ -39,7 +57,7 @@
             "user_id": 1,
             "housing_id": 101,
             "rating": 5,
-            "comment": "Все было отлично!"
+            "comment": "Отличное место! Все было на высшем уровне."
         }
     ]
 }
